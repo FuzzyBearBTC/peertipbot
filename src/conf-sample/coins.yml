@@ -20,24 +20,24 @@ btc:
         address: '([1|3][1-9a-z]{20,40})'
         units: '(btc|bitcoin|bitcoins)'
 
-# Dogecoin
-dog:
+# Peercoin
+ppc:
     enabled: true
-    unit: dog
-    name: Dogecoin
-    symbol: 'Ð'
-    config_file: '~/.dogecoin/dogecoin.conf'
+    unit: ppc
+    name: Peercoin
+    symbol: 'P'
+    config_file: '~/.peercoin/peercoin.conf'
     config_rpcserver: '127.0.0.1'
     minconf:
-        givetip: 4
-        withdraw: 60
+        givetip: 0.1
+        withdraw: 10
     txmin:
-        givetip: 5
+        givetip: 2
         withdraw: 1
-    txfee: 1
+    txfee: 0.01
     explorer:
-        address: 'http://dogechain.info/address/'
-        transaction: 'http://dogechain.info/tx/'
+        address: 'http://peerchain.net/address/'
+        transaction: 'http://peerchain.net/tx/'
     regex:
-        address: '(D[1-9a-z]{20,40})'
-        units: '(doge|dogecoin|dogecoins|doges|Ð|dog)'
+        address: '(P[1-9a-z]{20,40})'
+        units: '(PPC|peercoin|peercoins|ppcs|P)'
